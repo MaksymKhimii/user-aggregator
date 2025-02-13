@@ -11,10 +11,10 @@ aggregator:
   data-sources:
     - name: data-base-1
       strategy: postgres
-      url: jdbc:postgresql://db_postgres:5432/userdb
+      url: ${POSTGRES_URL}
       table: users
-      user: testuser
-      password: testpass
+      user: ${POSTGRES_USER}
+      password: ${POSTGRES_PASSWORD}
       mapping:
         id: user_id
         username: login
@@ -23,10 +23,10 @@ aggregator:
 
     - name: data-base-2
       strategy: mysql
-      url: jdbc:mysql://db_mysql:3306/userdb
+      url: ${MYSQL_URL}
       table: user_table
-      user: mysqluser
-      password: mysqlpass
+      user: ${MYSQL_USER}
+      password: ${MYSQL_PASSWORD}
       mapping:
         id: ldap_id
         username: ldap_login
