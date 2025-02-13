@@ -29,26 +29,16 @@ To run the application using Docker Compose, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/user-aggregator.git
+   git clone git@github.com:MaksymKhimii/user-aggregator.git
    
    cd user-aggregator
 
-   
-2. **Change .env file**
 
-    Environment Variables:
-   - POSTGRES_URL: JDBC URL for PostgreSQL.
-   - POSTGRES_USER: Username for PostgreSQL.
-   - POSTGRES_PASSWORD: Password for PostgreSQL.
-   - MYSQL_URL: JDBC URL for MySQL.
-   - MYSQL_USER: Username for MySQL.
-   - MYSQL_PASSWORD: Password for MySQL.
-
-3. **Build the application:**
+2. **Build the application:**
    ```bash
    mvn clean package
 
-4. **Run Docker Compose:**
+3. **Run Docker Compose:**
 
     ```bash
     docker-compose up --build
@@ -58,7 +48,7 @@ This command will:
    - Start a MySQL container.
    - Build and start the user-aggregator Spring Boot application.
 
-5. **Access the application:**
+4. **Access the application:**
    - The application will be available at http://localhost:8080.
    - Swagger UI will be available at http://localhost:8080/swagger-ui.html.
 
