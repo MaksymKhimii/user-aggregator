@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **User Aggregator** is a Spring Boot application designed to aggregate user data from multiple databases (PostgreSQL and MySQL). It provides RESTful APIs to fetch and add users across these databases. The application uses Flyway for database migrations and Testcontainers for integration testing.
+The **User Aggregator** is a Spring Boot application designed to aggregate user data from multiple databases (example with PostgreSQL and MySQL but it can be any other DB). It provides RESTful APIs to fetch and add users across these databases. The application uses Flyway for database migrations and Testcontainers for integration testing.
 
 ### Key Features:
 - Fetch users from PostgreSQL and MySQL databases.
